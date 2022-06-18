@@ -1,52 +1,45 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<title>WayUp task 3</title>
-</head>
-<body>
-	<header>
-		<img src="./img/logo.jpeg" alt="Логотип WayUp" class="photo">
-		<h1 class="h_1">Вступление H1</h1>
-		<p class="first_p">
-			Это текст моего второго домашнего задания.
-		</p>
-		<p class="second_p">
-			Не верится, но мне уже удаётся писать свой <span>первый код на HTML.</span> 
-		</p>
-	</header>
-	<section>
-		<h2 class="h2_color">Что дальше? H2</h2>
-		<p>
-			Дальше, я буду получать всё больше и больше опыта в разработке сайтов, чтобы достичь новых вершин!
-			<a href="https://google.com.ua" target="_blank" title="Ссылка на поисковую страницу Google.com">Прочитать больше в Google</a>
-		</p>
-	</section>
-	<section>
-		<h2 class="h2_color second_h2">Что я буду уметь? H2</h2>
-		<p class="third_p">
-			Я смогу создавать вот такие замечательные формы:
-		</p>
-		<form action="#">
-				<input type="text" name="name" placeholder="Имя" required>
-				<input type="email" name="email" placeholder="E-mail" required>
-				<input type="tel" name="phone_number" placeholder="Телефон" required>
-				<button type="submit">Отправить форму</button>
-		</form>
-		<p>
-			А также, я научусь создавать списки:
-		</p>
-		<ul class="list">
-			<li>С одним пунктом</li>
-			<li>С несколькими пунктами</li>
-			<li>И даже с тремя отдельными пунктами</li>
-		</ul>
-	</section>
-	<footer>
-		<h2 class="h2_color">Отличное начало! H2</h2>
-		<a href="https://my.wayup.in/lesson/2237" target="_blank" title="Ссылка на урок из курса 'Веб-верстальщик начало'">Перейти на страницу первого занятия курса</a>
-	</footer>
-</body>
-</html>
+h1,
+h2,
+img,
+p,
+form,
+input,
+button,
+ul,
+li,
+a {
+    box-sizing: border-box;
+}
+
+.photo {
+    width: 150px;
+}
+
+.h_1,
+.second_p span {
+    color: red;
+}
+
+.first_p {
+    width: 100px;
+    background-color: blue;
+    color: white;
+    margin-bottom: 112px;
+}
+
+.h2_color {
+    background-color: green;
+    color: white;
+}
+
+.second_h2 {
+    padding: 30px 20px 20px 40px;
+}
+
+.third_p {
+    padding-left: 92px;
+}
+
+.list li {
+    border: 1px solid black;
+}
