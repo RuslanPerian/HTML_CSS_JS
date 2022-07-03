@@ -4,6 +4,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     color: #201b2d;
+    margin 0;
 }
 
 div, p, input, button, form, span, a {
@@ -15,17 +16,19 @@ h1, h2, h3, h4, h5, h6, p, a, img, span, input {
     padding: 0;
 }
 
-.container {
-    width: 1171px;
+.wish__container,
+.form__container,
+.footer__container {
+    width: 1170px;
     margin: 0 auto;
 }
 
-.container-header{
+.header__container {
     width: 1232px;
     margin: 0 auto;
 }
 
-.header{
+.header {
     background: rgba(77,189,254,1);
     background: -moz-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
@@ -38,30 +41,30 @@ h1, h2, h3, h4, h5, h6, p, a, img, span, input {
     color: #ffffff;
 }
 
-.flex{
+.header__flex {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 110px;
+    align-items:center;
 }
 
-.purpose{
-    margin-top: 144px;
-    margin-bottom: 211px;
+.header__purpose {
+    padding-top: 144px;
+    padding-bottom: 211px;
     width: 573px;
 }
 
-.title{
+.header__title {
     font-weight: 700;
     font-size: 37px;
     line-height: 1.273em;
 }
 
-.title span {
+.header__title span {
     font-size: 59px;
     line-height: 1.273em;
 }
 
-.intro{
+.header__intro {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin-top: 26px;
@@ -70,30 +73,30 @@ h1, h2, h3, h4, h5, h6, p, a, img, span, input {
     line-height: 1.583em;
 }
 
-.btn{
+.header__btn,
+.form__btn {
     background-color: #ffd429;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     padding: 23px 25px 21px 30px;
     display: block;
-    width: 223px;
     text-align: center;
     text-decoration: none;
     color: #2e2a1b;
     transition: all 0.5s ease;
 }
 
-.btn:hover{
+.header__btn {
+    width: 223px;
+}
+
+.header__btn:hover,
+.form__btn:hover {
     background-color: #f0ab29;
 }
 
-.desktop{
+.header__desktop {
     margin-bottom: 72px;
-}
-
-.section-title{
-    font-weight: 700;
-    font-size: 30px;
 }
 
 .wish,
@@ -103,47 +106,54 @@ h1, h2, h3, h4, h5, h6, p, a, img, span, input {
 }
 
 .wish {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
+    padding-top: 110px;
 }
 
-.pluses {
+.wish__title,
+.form__title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.wish__pluses {
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
 }
 
-.plus0,
-.plus2 {
+.wish__plus0,
+.wish__plus2 {
     width: 289px;
 }
 
-.plus0{
+.wish__plus0 {
     background: url('../img/icon0.jpg') no-repeat top;
 }
 
-.plus-title{
+.wish__plus-title {
     padding-top: 91px;
     font-weight: 700;
     font-size: 19px;
     margin-bottom: 21px;
 }
 
-.plus1{
+.wish__plus1 {
     width: 260px;
     background: url('../img/icon1.jpg') no-repeat top;
 }
 
-.plus2{
+.wish__plus2 {
     background: url('../img/icon2.jpg') no-repeat top;
 }
 
-.form{
+.form {
     padding-top: 104px;
     padding-bottom: 102px;
     background-color: #ecf3f8;
 }
 
-.form-container{
+.form__input-container {
     margin-top: 58px;
 }
 
@@ -163,22 +173,22 @@ input {
     color: #bbbbbb;
 }
 
-.place {
+.form__place {
     margin-bottom: 14px;
 }
 
-.btn-form{
+.form__btn {
     width: 345px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
 }
 
-.footer{
+.footer {
     background-color: #164d7a;
 }
 
-.credits{
+.footer__credits {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     padding-top: 64px;
